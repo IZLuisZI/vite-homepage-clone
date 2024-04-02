@@ -1,0 +1,135 @@
+@media (max-width: 2300px) {
+  .main-welcome-page-wrapper,
+  .grid-container,
+  .sponsor-wrapper,
+  summary,
+  footer {
+    padding: 7rem 20rem;
+  }
+}
+
+@media (max-width: 1528px) {
+  .main-welcome-page-wrapper,
+  .grid-container,
+  .sponsor-wrapper,
+  summary,
+  footer {
+    padding: 7rem 10rem;
+  }
+
+  .main-welcome-page-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .vitelogo {
+    flex: 0 0 400px;
+  }
+  .welcome-message {
+    text-align: center;
+  }
+  .buttons-container {
+    justify-content: center;
+  }
+}
+@media (max-width: 1000px) {
+  .main-welcome-page-wrapper,
+  .grid-container,
+  .sponsor-wrapper,
+  summary,
+  footer {
+    padding: 7rem 5rem;
+  }
+  header {
+    justify-content: space-between;
+  }
+  .main-nav {
+    display: none;
+    background-color: #1b1b1f;
+    position: absolute;
+    flex-direction: column;
+    gap: 0.5rem;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+  .main-nav ul {
+    flex-direction: column;
+  }
+
+  .main-nav ul li a {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    padding: 1rem 0;
+    transition: all 0.5 ease;
+  }
+
+  .main-nav ul li a:hover {
+    background-color: #202127;
+  }
+
+  .icon-header,
+  .socials {
+    justify-content: center;
+    display: flex;
+  }
+  .ham-menu {
+    display: block;
+  }
+
+  .resources-opened-menu {
+    position: relative;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-welcome-page-wrapper,
+  .grid-container,
+  .sponsor-wrapper,
+  summary,
+  footer {
+    padding: 7rem 2rem;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .grid-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .span-2 {
+    grid-column: span 2;
+  }
+  .sponsor-logos-container-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .vitelogo {
+    flex: 0 0 200px;
+  }
+  .buttons-container {
+    flex-wrap: wrap;
+  }
+  .sponsor-logos-container > article img,
+  .sponsor-logos-container > article svg {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-welcome-page-wrapper,
+  .grid-container,
+  .sponsor-wrapper,
+  summary,
+  footer {
+    padding: 7rem 1rem;
+  }
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+  }
+  .sponsor-logos-container-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

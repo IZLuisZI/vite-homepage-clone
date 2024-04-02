@@ -1,0 +1,355 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1b1b1f;
+  scroll-behavior: smooth;
+  font-family: "Chinese Quotes", "Inter var", "Inter", ui-sans-serif, system-ui,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Helvetica, Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+img {
+  max-width: 100%;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px black solid;
+  background-color: #1b1b1f;
+}
+header img,
+.search-icon {
+  max-height: 3rem;
+  vertical-align: middle;
+}
+
+.logo {
+  display: flex;
+  gap: 1rem;
+  color: #8f8f95;
+  font-weight: 500;
+}
+.search-icon {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.5rem 0.75rem;
+  border-radius: 7px;
+  width: 10rem;
+  background-color: #161618;
+}
+.search-icon:hover {
+  outline: solid 1px rgb(0, 94, 165);
+}
+.ctrl {
+  margin-left: auto;
+  padding: 0.1rem;
+  border: solid 1px #8f8f95;
+  border-radius: 5px;
+}
+.main-nav {
+  display: flex;
+  gap: 2rem;
+  padding: 0.5rem;
+}
+.main-nav a:hover {
+  color: #a8b1ff;
+  transition: all 0.2s ease;
+}
+.main-nav ul {
+  display: flex;
+  list-style-type: none;
+}
+.main-nav ul li {
+  position: relative;
+  padding: 0 0.5rem;
+  font-weight: 500;
+}
+.main-nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+.icon-header {
+  cursor: pointer;
+  position: relative;
+  padding: 0 0.5rem;
+}
+.socials {
+  display: flex;
+  gap: 1rem;
+}
+.resources-opened-menu {
+  background-color: #1b1b1f;
+  position: absolute;
+  right: 0;
+  display: none;
+  border-radius: 15px;
+  border: #8f8f95 solid 1px;
+  top: 100%;
+}
+.resources-opened-menu ul {
+  padding: 1rem;
+  display: block;
+}
+.resources-opened-menu ul li {
+  padding: 0.5rem 3rem 0.5rem 0.5rem;
+  white-space: nowrap;
+
+  font-weight: 500;
+}
+.resources-opened-menu ul li:hover {
+  background-color: rgba(171, 171, 171, 0.186);
+  border-radius: 5px;
+  color: white;
+}
+
+#Resources:hover .icon,
+#Versions:hover .icon {
+  transition: all 0.2s ease;
+}
+
+.ham-menu {
+  display: none;
+  padding: 1rem;
+  cursor: pointer;
+}
+.ham-menu:hover {
+  background-color: #202127;
+}
+.main-welcome-page-wrapper,
+.grid-container,
+.sponsor-wrapper,
+summary,
+footer {
+  display: flex;
+
+  padding: 7rem 35rem;
+}
+
+.vitelogo,
+.welcome-message {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.vitelogo {
+  position: relative;
+}
+.background {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(-45deg, #bd34fe 50%, #47caff 50%);
+  border-radius: 100%;
+  filter: blur(72px);
+}
+.vitelogo img {
+  object-fit: cover;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+}
+
+.vite {
+  font-size: 5.5rem;
+  font-weight: 700;
+  background: linear-gradient(-45deg, #bd34fe 50%, #47caff 50%);
+  backdrop-filter: blur(5px);
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.welcome-message {
+  display: flex;
+  flex-direction: column;
+}
+.welcome-message h1 {
+  color: #dfdfd6;
+  line-height: 60px;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #8f8f95;
+}
+
+.welcome-message p {
+  padding-top: 1rem;
+  color: #8f8f95;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.buttons-container {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem 0;
+}
+.buttons-container button {
+  white-space: nowrap;
+  color: black;
+  cursor: pointer;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  font-weight: 700;
+  border-radius: 20px;
+}
+.btn-blue {
+  background-color: #646cff;
+}
+
+.grid-container {
+  padding-top: 0 !important;
+  padding-bottom: 10rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+  border-bottom: 1px black solid;
+}
+.grid-item {
+  background-color: #202127;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  border-radius: 10px;
+}
+.grid-item p {
+  font-weight: 600;
+  color: #8f8f95;
+}
+.grid-item span {
+  font-size: 1.3rem;
+  color: white;
+  font-weight: 700;
+}
+.grid-icon {
+  width: fit-content;
+  border-radius: 10px;
+  padding: 0.75rem;
+  font-size: 1.75rem;
+  background-color: #2b2f36;
+}
+
+.sponsor-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  color: #8f8f95;
+}
+
+.sponsor-message-container {
+  text-align: center;
+}
+.sponsor-message {
+  margin-top: 1rem;
+  font-weight: 600;
+  max-width: 30ch;
+  font-size: 1.1rem;
+}
+.special-sponsors {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+.special-sponsors > h2 {
+  font-size: 1rem;
+  padding: 0.7rem 0;
+}
+.special-sponsors > * {
+  background-color: #202127;
+}
+
+.sponsor-logos-container {
+  background-color: transparent !important;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.sponsor-logos-container > article {
+  cursor: pointer;
+  padding: 5rem 0;
+  background-color: #202127;
+  flex: 1 0 0;
+}
+.sponsor-logos-container > article img {
+  filter: grayscale(100%);
+}
+.sponsor-logos-container > article:hover > img {
+  filter: grayscale(0);
+}
+.sponsor-logos-container > article:hover {
+  transition: all 0.2s ease-in-out;
+  background-color: #dfdfd634;
+}
+.sponsor-logos-container > article img,
+.sponsor-logos-container > article svg {
+  max-height: 50px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.sponsor-logos-container-grid {
+  background-color: transparent !important;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5rem;
+}
+
+.sponsor-logos-container-grid > article {
+  cursor: pointer;
+  padding: 5rem 0;
+  background-color: #202127;
+}
+.sponsor-logos-container-grid > article:hover {
+  transition: all 0.2s ease-in-out;
+  background-color: #dfdfd634;
+}
+
+summary > p {
+  margin: 0 auto;
+}
+summary > p > button {
+  cursor: pointer;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 1px solid #8f8f95;
+  font-weight: 700;
+  color: #8f8f95;
+}
+
+summary {
+  border-bottom: 1px black solid;
+}
+summary > p > button:hover {
+  border: 1px solid red;
+  color: red;
+}
+
+footer {
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+  text-align: center;
+  flex-direction: column;
+  font-weight: 700;
+  color: #8f8f95;
+}

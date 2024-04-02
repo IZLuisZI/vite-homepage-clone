@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="media-queries.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="logo-with-shadow.png" alt="" />
+        <div class="search-icon">
+          <i
+            class="fa-solid fa-magnifying-glass fa-sm"
+            style="color: #ffffff"
+          ></i>
+          <span>Search</span>
+          <div class="ctrl">Ctrl K</div>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#">Guide</a></li>
+          <li><a href="#">Config</a></li>
+          <li><a href="#">Plugins</a></li>
+          <li id="Resources">
+            <a href="#"
+              >Resources<i
+                class="fa-solid fa-chevron-down fa-2xs icon"
+                style="color: #ffffff; margin-left: 3px"
+              ></i
+            ></a>
+            <div class="resources-opened-menu">
+              <ul>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Releases</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Books </a></li>
+              </ul>
+            </div>
+          </li>
+          <li id="Versions">
+            <a href="#"
+              >Version
+              <i
+                class="fa-solid fa-chevron-down fa-2xs icon"
+                style="color: #ffffff; margin-left: 3px"
+              ></i
+            ></a>
+            <div class="resources-opened-menu">
+              <ul>
+                <li><a href="#">Vite 4 Docs</a></li>
+                <li><a href="#">Vite 3 Docs</a></li>
+                <li>
+                  <a href="#">Vite 2 Docs </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <div class="icon-header">
+          <i class="fa-solid fa-language" style="color: white"></i
+          ><i
+            class="fa-solid fa-chevron-down fa-2xs"
+            style="color: #ffffff; margin-left: 3px"
+          ></i>
+        </div>
+        <section class="socials">
+          <a href="#">
+            <i class="fa-brands fa-x-twitter" style="color: #ffffff"></i
+          ></a>
+
+          <a href="#">
+            <i class="fa-brands fa-discord" style="color: #ffffff"></i
+          ></a>
+          <a href="#">
+            <i class="fa-brands fa-github" style="color: #ffffff"></i
+          ></a>
+        </section>
+      </nav>
+      <div class="ham-menu">
+        <i class="fa-solid fa-bars fa-2xl" style="color: white"></i>
+      </div>
+    </header>
+    <main class="content-home">
+      <div class="main-welcome-page-wrapper">
+        <div class="welcome-message">
+          <span class="vite">Vite</span>
+          <h1>Next Generation Frontend Tooling</h1>
+          <p>
+            Get ready for a development environment that can finally catch up
+            with you
+          </p>
+          <div class="buttons-container">
+            <button class="btn-blue">Get Started</button>
+            <button class="btn-gray">Why vite?</button>
+            <button class="btn-gray">View on Github</button>
+            <button class="btn-blue">🎉 ViteConf 23!</button>
+          </div>
+        </div>
+        <div class="vitelogo">
+          <div class="background"></div>
+          <img src="logo-with-shadow.png" alt="vite logo" />
+        </div>
+      </div>
+      <div class="grid-container">
+        <div class="grid-item">
+          <div class="grid-icon">💡</div>
+          <span>Instant Server Start</span>
+          <p>On demand file serving over native ESM, no bundling required!</p>
+        </div>
+        <div class="grid-item">
+          <div class="grid-icon">⚡</div>
+          <span>Instant Server Start</span>
+
+          <p>
+            Hot Module Replacement (HMR) that stays fast regardless of app size.
+          </p>
+        </div>
+        <div class="grid-item">
+          <div class="grid-icon">🔨</div>
+          <span>Instant Server Start</span>
+
+          <p>Out-of-the-box support for TypeScript, JSX, CSS and more.</p>
+        </div>
+        <div class="grid-item">
+          <div class="grid-icon">📦</div>
+          <span>Instant Server Start</span>
+
+          <p>
+            Pre-configured Rollup build with multi-page and library mode
+            support.
+          </p>
+        </div>
+        <div class="grid-item">
+          <div class="grid-icon">🔩</div>
+          <span>Instant Server Start</span>
+
+          <p>Rollup-superset plugin interface shared between dev and build.</p>
+        </div>
+        <div class="grid-item">
+          <div class="grid-icon">🔑</div>
+          <span>Instant Server Start</span>
+
+          <p>Flexible programmatic APIs with full TypeScript typing.</p>
+        </div>
+      </div>
+      <div class="sponsor-wrapper">
+        <div class="sponsor-message-container">
+          <span
+            ><i class="fa-regular fa-heart fa-2xl" style="color: #8f8f95"></i
+          ></span>
+          <div class="sponsor-message">
+            Vite is free and open source, made possible by wonderful sponsors.
+          </div>
+        </div>
+        <section class="special-sponsors">
+          <h2>Special Sponsors</h2>
+          <div class="sponsor-logos-container grid-layout">
+            <article>
+              <img src="./images/sponsors/storyblok.png" alt="stackblitz" />
+            </article>
+            <article>
+              <img src="./images/sponsors/nuxtlabs.svg" alt="Nuxt Labs" />
+            </article>
+            <article class="span-2">
+              <img src="./images/sponsors/astro.svg" alt="Astro" />
+            </article>
+          </div>
+        </section>
+        <section class="special-sponsors">
+          <h2>Platinum Sponsors</h2>
+          <div class="sponsor-logos-container">
+            <article>
+              <img src="./images/sponsors/nuxtlabs.svg" alt="stackblitz" />
+            </article>
+
+            <article>
+              <img src="./images/sponsors/astro.svg" alt="Astro" />
+            </article>
+          </div>
+        </section>
+        <section class="special-sponsors">
+          <h2>Gold Sponsors</h2>
+          <div class="sponsor-logos-container-grid">
+            <article>
+              <img src="./images/sponsors/nuxtlabs.svg" alt="stackblitz" />
+            </article>
+            <article>
+              <img src="./images/sponsors/nuxtlabs.svg" alt="Nuxt Labs" />
+            </article>
+            <article>
+              <img src="./images/sponsors/astro.svg" alt="Astro" />
+            </article>
+            <article>
+              <img src="./images/sponsors/nuxtlabs.svg" alt="stackblitz" />
+            </article>
+            <article>
+              <img src="./images/sponsors/nuxtlabs.svg" alt="Nuxt Labs" />
+            </article>
+            <article>
+              <img src="./images/sponsors/astro.svg" alt="Astro" />
+            </article>
+          </div>
+        </section>
+      </div>
+      <summary>
+        <p>
+          <button style="margin-right: 5px">Sponsor Vite</button>
+          <button>Sponsor Evan You</button>
+        </p>
+      </summary>
+    </main>
+    <footer>
+      <p class="message">Released under the MIT License. (72104f6d)</p>
+      <p class="copyright">
+        Copyright © 2019-present Evan You & Vite Contributors
+      </p>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>
