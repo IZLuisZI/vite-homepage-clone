@@ -23,7 +23,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 1.5rem 2rem;
+  padding: 0 4rem;
   border-bottom: 1px black solid;
   background-color: #1b1b1f;
 }
@@ -36,6 +36,7 @@ header img,
 .logo {
   display: flex;
   gap: 1rem;
+  padding: 1.5rem 0;
   color: #8f8f95;
   font-weight: 500;
 }
@@ -58,10 +59,10 @@ header img,
   border: solid 1px #8f8f95;
   border-radius: 5px;
 }
+
 .main-nav {
   display: flex;
-  gap: 2rem;
-  padding: 0.5rem;
+  height: 100%;
 }
 .main-nav a:hover {
   color: #a8b1ff;
@@ -74,6 +75,7 @@ header img,
 .main-nav ul li {
   position: relative;
   padding: 0 0.5rem;
+
   font-weight: 500;
 }
 .main-nav ul li a {
@@ -90,33 +92,50 @@ header img,
   gap: 1rem;
 }
 .resources-opened-menu {
+  transform: scale(0);
   background-color: #1b1b1f;
+  transition: transform 0.2s ease-in-out;
   position: absolute;
   right: 0;
-  display: none;
   border-radius: 15px;
-  border: #8f8f95 solid 1px;
-  top: 100%;
+  border: #8f8f95 solid 2px;
+  top: 120%;
 }
 .resources-opened-menu ul {
   padding: 1rem;
   display: block;
 }
 .resources-opened-menu ul li {
-  padding: 0.5rem 3rem 0.5rem 0.5rem;
   white-space: nowrap;
-
+  height: fit-content !important;
+  width: fit-content !important;
   font-weight: 500;
+}
+.resources-opened-menu a {
+  display: inline-block;
+  padding: 0.5rem 3rem 0.5rem 0.5rem !important;
 }
 .resources-opened-menu ul li:hover {
   background-color: rgba(171, 171, 171, 0.186);
   border-radius: 5px;
   color: white;
 }
-
+.icon {
+  transition: all 0.2s ease-in-out;
+}
 #Resources:hover .icon,
 #Versions:hover .icon {
-  transition: all 0.2s ease;
+  transition: all 0.2s ease-in-out;
+  rotate: 180deg;
+}
+#Versions:hover > .resources-opened-menu {
+  transform: scale(1);
+}
+#Resources:hover > .resources-opened-menu {
+  transform: scale(1);
+}
+.resources-opened-menu > a {
+  padding: 5rem;
 }
 
 .ham-menu {
